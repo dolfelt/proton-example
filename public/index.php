@@ -1,5 +1,6 @@
 <?php
+require_once __DIR__.'/../vendor/autoload.php';
 
-$app = require __DIR__.'/../app/bootstrap.php';
+$app = new \App\Application();
 
-Stack\run($app);
+$app->runStack();
